@@ -24,6 +24,20 @@
   </url>
   
   <url>
+    <loc>https://rainplus.github.io/posts/personal-vim-config/</loc>
+    <lastmod>2020-10-04T21:14:46+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rainplus.github.io/posts/reinstall-macos-catalina/</loc>
+    <lastmod>2020-10-04T21:14:46+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://rainplus.github.io/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
