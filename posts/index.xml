@@ -8,15 +8,6 @@
     <language>zh-cn</language>
     <lastBuildDate>Sun, 04 Oct 2020 21:14:46 +0800</lastBuildDate><atom:link href="https://rainplus.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://rainplus.github.io/posts/my-first-post/</link>
-      <pubDate>Sun, 04 Oct 2020 21:14:46 +0800</pubDate>
-      
-      <guid>https://rainplus.github.io/posts/my-first-post/</guid>
-      <description>测试我的新文件</description>
-    </item>
-    
-    <item>
       <title>个人的 vimrc</title>
       <link>https://rainplus.github.io/posts/personal-vim-config/</link>
       <pubDate>Sun, 04 Oct 2020 21:14:46 +0800</pubDate>
