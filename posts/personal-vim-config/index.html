@@ -29,7 +29,7 @@
     <meta property="og:title" content="个人的 vimrc" />
 <meta property="og:description" content="个人的 vimrc 趁着国庆假期，在家重新撸一一遍 MacOs 的 重装，所以很多东西都得重来，vimrc 配置是基本中的基本吧
 每个使用 vim 的的人者希望 vim 比idea 等功能都厉害，当然 vim 本身如此 使用 vi/vim 就是简单，并且是服务器上的标配，在服务器上是没有图形工具的，当然你机子性能足够。。你也是可以装桌面的，但服务器如此宝贵的资源，你真的要浪费给图形应用么？
-VIM 的最基本配置  首要是在自己的 terminal 中能快速使用 vim  alias vi=&quot;vim&quot;  配置自己的 .vimrc 文件  &quot; 配置自己合适的 vimrc &quot;set background=light &quot;colorscheme solarized &quot;定制主题,会跟随 iterm2 的颜色 let g:solarized_termcolors=256 &quot;色域范围 syntax on &quot; 开启语法高亮 set number &quot; 显示等号 set relativenumber &quot; 显示相对行号 &quot; 自动打开 NERDTree &quot;autocmd vimenter * NERDTree &quot; 未指定文件的时候打开 NERDTree autocmd StdinReadPre * let s:std_in=1 autocmd VimEnter * if argc() == 0 &amp;&amp; !" />
+VIM 的最基本配置  首要是在自己的 terminal 中能快速使用 vim macos 自带的 vim 有些缺陷，安装python3.8 版本  # 更新一个 brew install vim --with-override-system-vi alias vi=&quot;vim&quot;  配置自己的 .vimrc 文件  &quot; 配置自己合适的 vimrc &quot;set background=light &quot;colorscheme solarized &quot;定制主题,会跟随 iterm2 的颜色 let g:solarized_termcolors=256 &quot;色域范围 syntax on &quot; 开启语法高亮 set number &quot; 显示等号 set relativenumber &quot; 显示相对行号 &quot; 自动打开 NERDTree &quot;autocmd vimenter * NERDTree &quot; 未指定文件的时候打开 NERDTree autocmd StdinReadPre * let s:std_in=1 autocmd VimEnter * if argc() == 0 &amp;&amp; !" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://rainplus.github.io/posts/personal-vim-config/" />
 <meta property="article:published_time" content="2020-10-04T21:14:46+08:00" />
@@ -37,10 +37,10 @@ VIM 的最基本配置  首要是在自己的 terminal 中能快速使用 vim  a
 <meta itemprop="name" content="个人的 vimrc">
 <meta itemprop="description" content="个人的 vimrc 趁着国庆假期，在家重新撸一一遍 MacOs 的 重装，所以很多东西都得重来，vimrc 配置是基本中的基本吧
 每个使用 vim 的的人者希望 vim 比idea 等功能都厉害，当然 vim 本身如此 使用 vi/vim 就是简单，并且是服务器上的标配，在服务器上是没有图形工具的，当然你机子性能足够。。你也是可以装桌面的，但服务器如此宝贵的资源，你真的要浪费给图形应用么？
-VIM 的最基本配置  首要是在自己的 terminal 中能快速使用 vim  alias vi=&quot;vim&quot;  配置自己的 .vimrc 文件  &quot; 配置自己合适的 vimrc &quot;set background=light &quot;colorscheme solarized &quot;定制主题,会跟随 iterm2 的颜色 let g:solarized_termcolors=256 &quot;色域范围 syntax on &quot; 开启语法高亮 set number &quot; 显示等号 set relativenumber &quot; 显示相对行号 &quot; 自动打开 NERDTree &quot;autocmd vimenter * NERDTree &quot; 未指定文件的时候打开 NERDTree autocmd StdinReadPre * let s:std_in=1 autocmd VimEnter * if argc() == 0 &amp;&amp; !">
+VIM 的最基本配置  首要是在自己的 terminal 中能快速使用 vim macos 自带的 vim 有些缺陷，安装python3.8 版本  # 更新一个 brew install vim --with-override-system-vi alias vi=&quot;vim&quot;  配置自己的 .vimrc 文件  &quot; 配置自己合适的 vimrc &quot;set background=light &quot;colorscheme solarized &quot;定制主题,会跟随 iterm2 的颜色 let g:solarized_termcolors=256 &quot;色域范围 syntax on &quot; 开启语法高亮 set number &quot; 显示等号 set relativenumber &quot; 显示相对行号 &quot; 自动打开 NERDTree &quot;autocmd vimenter * NERDTree &quot; 未指定文件的时候打开 NERDTree autocmd StdinReadPre * let s:std_in=1 autocmd VimEnter * if argc() == 0 &amp;&amp; !">
 <meta itemprop="datePublished" content="2020-10-04T21:14:46+08:00" />
 <meta itemprop="dateModified" content="2020-10-04T21:14:46+08:00" />
-<meta itemprop="wordCount" content="303">
+<meta itemprop="wordCount" content="350">
 
 
 
@@ -49,7 +49,7 @@ VIM 的最基本配置  首要是在自己的 terminal 中能快速使用 vim  a
 <meta name="twitter:title" content="个人的 vimrc"/>
 <meta name="twitter:description" content="个人的 vimrc 趁着国庆假期，在家重新撸一一遍 MacOs 的 重装，所以很多东西都得重来，vimrc 配置是基本中的基本吧
 每个使用 vim 的的人者希望 vim 比idea 等功能都厉害，当然 vim 本身如此 使用 vi/vim 就是简单，并且是服务器上的标配，在服务器上是没有图形工具的，当然你机子性能足够。。你也是可以装桌面的，但服务器如此宝贵的资源，你真的要浪费给图形应用么？
-VIM 的最基本配置  首要是在自己的 terminal 中能快速使用 vim  alias vi=&quot;vim&quot;  配置自己的 .vimrc 文件  &quot; 配置自己合适的 vimrc &quot;set background=light &quot;colorscheme solarized &quot;定制主题,会跟随 iterm2 的颜色 let g:solarized_termcolors=256 &quot;色域范围 syntax on &quot; 开启语法高亮 set number &quot; 显示等号 set relativenumber &quot; 显示相对行号 &quot; 自动打开 NERDTree &quot;autocmd vimenter * NERDTree &quot; 未指定文件的时候打开 NERDTree autocmd StdinReadPre * let s:std_in=1 autocmd VimEnter * if argc() == 0 &amp;&amp; !"/>
+VIM 的最基本配置  首要是在自己的 terminal 中能快速使用 vim macos 自带的 vim 有些缺陷，安装python3.8 版本  # 更新一个 brew install vim --with-override-system-vi alias vi=&quot;vim&quot;  配置自己的 .vimrc 文件  &quot; 配置自己合适的 vimrc &quot;set background=light &quot;colorscheme solarized &quot;定制主题,会跟随 iterm2 的颜色 let g:solarized_termcolors=256 &quot;色域范围 syntax on &quot; 开启语法高亮 set number &quot; 显示等号 set relativenumber &quot; 显示相对行号 &quot; 自动打开 NERDTree &quot;autocmd vimenter * NERDTree &quot; 未指定文件的时候打开 NERDTree autocmd StdinReadPre * let s:std_in=1 autocmd VimEnter * if argc() == 0 &amp;&amp; !"/>
 
 	
   </head>
@@ -162,8 +162,11 @@ VIM 的最基本配置  首要是在自己的 terminal 中能快速使用 vim  a
 <h2 id="vim-的最基本配置">VIM 的最基本配置</h2>
 <ul>
 <li>首要是在自己的 terminal 中能快速使用 vim</li>
+<li>macos 自带的 vim 有些缺陷，安装python3.8 版本</li>
 </ul>
-<pre><code>alias vi=&quot;vim&quot;
+<pre><code># 更新一个
+brew install vim --with-override-system-vi
+alias vi=&quot;vim&quot;
 </code></pre><ul>
 <li>配置自己的 .vimrc 文件</li>
 </ul>
@@ -270,7 +273,27 @@ set autoread
 
 </code></pre><p><code>关于 Macos 代码补全提示</code>
 macos 自带的 vim  不支持 youcompleteme 插件，需要自己安装一个 vim，但我自己并不会在 vim 进行开发， 我只是一个轻度的键盘流患者。</p>
-<ul class="pa0">
+<h2 id="插件管理器的选择">插件管理器的选择</h2>
+<ul>
+<li>vumdle</li>
+<li>vam</li>
+<li><code>vim-plug</code> 我个人喜欢这个，简洁高效
+安装vim-plug很简单，下载plugin.vim到~/.vim/autoload目录即可，可以使用下面的一行命令来下载：</li>
+</ul>
+<pre><code>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+</code></pre><p>vim-plu通过在~/.vimrc中增加call plugin#begin()和call plugin#end()来定义和管理插件，插件以Plug &lsquo;github_url&rsquo;形式来描述, 格式如下：</p>
+<pre><code>call plug#begin()
+# 完整的GitHub仓库地址
+Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+# 简写形式，只写username/repo即可
+Plug 'junegunn/fzf'
+
+# 这是代码块的插件工具
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+call plug#end()
+</code></pre><ul class="pa0">
   
 </ul>
 <div class="mt6 instapaper_ignoref">

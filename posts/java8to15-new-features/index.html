@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>记录 java  新版本的特性 | 个人技术积累</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.75.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="记录 java  新版本的特性" />
+<meta property="og:description" content="#记录 java 新版本的特性
+java8 3/18/2014 接口默认方法与静态方法 /** * 默认方法 */ public interface DefMethod { /** * 已知一个接口的的属性都会被声明为 public final static * 而方法只会被声明为 public abstract * * java8 现在给接口提供了默认实现,使用 default 关键字进行声明 * 当实现这个接口的类型未进行覆盖方法里，会默认使用这个实现 * * 如果是旧的方法，实现类必须实现这个接口的全部方法否着只能声明为 abstract 类 */ default void method(){ // do something  } void abstractMethod(); } lambda 表达式 lambda 是希腊的第十一个字母（大写Λ，小写λ），高中知识：物理上的波长符号。 在 java 中的应用是简化内部类的写法。但 lambda 表达式并不能表达所有的匿名类，只能用户取代函数接口
+举栗子：
+ 无参函数的简写  旧方式：
+new Thread(new Runnable(){ @Override public void run(){ // do something  } }); 使用 lambda 表达式：" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rainplus.github.io/posts/java8to15-new-features/" />
+<meta property="article:published_time" content="2020-10-04T21:14:46+08:00" />
+<meta property="article:modified_time" content="2020-10-04T21:14:46+08:00" />
+<meta itemprop="name" content="记录 java  新版本的特性">
+<meta itemprop="description" content="#记录 java 新版本的特性
+java8 3/18/2014 接口默认方法与静态方法 /** * 默认方法 */ public interface DefMethod { /** * 已知一个接口的的属性都会被声明为 public final static * 而方法只会被声明为 public abstract * * java8 现在给接口提供了默认实现,使用 default 关键字进行声明 * 当实现这个接口的类型未进行覆盖方法里，会默认使用这个实现 * * 如果是旧的方法，实现类必须实现这个接口的全部方法否着只能声明为 abstract 类 */ default void method(){ // do something  } void abstractMethod(); } lambda 表达式 lambda 是希腊的第十一个字母（大写Λ，小写λ），高中知识：物理上的波长符号。 在 java 中的应用是简化内部类的写法。但 lambda 表达式并不能表达所有的匿名类，只能用户取代函数接口
+举栗子：
+ 无参函数的简写  旧方式：
+new Thread(new Runnable(){ @Override public void run(){ // do something  } }); 使用 lambda 表达式：">
+<meta itemprop="datePublished" content="2020-10-04T21:14:46+08:00" />
+<meta itemprop="dateModified" content="2020-10-04T21:14:46+08:00" />
+<meta itemprop="wordCount" content="908">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="记录 java  新版本的特性"/>
+<meta name="twitter:description" content="#记录 java 新版本的特性
+java8 3/18/2014 接口默认方法与静态方法 /** * 默认方法 */ public interface DefMethod { /** * 已知一个接口的的属性都会被声明为 public final static * 而方法只会被声明为 public abstract * * java8 现在给接口提供了默认实现,使用 default 关键字进行声明 * 当实现这个接口的类型未进行覆盖方法里，会默认使用这个实现 * * 如果是旧的方法，实现类必须实现这个接口的全部方法否着只能声明为 abstract 类 */ default void method(){ // do something  } void abstractMethod(); } lambda 表达式 lambda 是希腊的第十一个字母（大写Λ，小写λ），高中知识：物理上的波长符号。 在 java 中的应用是简化内部类的写法。但 lambda 表达式并不能表达所有的匿名类，只能用户取代函数接口
+举栗子：
+ 无参函数的简写  旧方式：
+new Thread(new Runnable(){ @Override public void run(){ // do something  } }); 使用 lambda 表达式："/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        个人技术积累
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://rainplus.github.io/posts/java8to15-new-features/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://rainplus.github.io/posts/java8to15-new-features/&amp;text=%e8%ae%b0%e5%bd%95%20java%20%20%e6%96%b0%e7%89%88%e6%9c%ac%e7%9a%84%e7%89%b9%e6%80%a7" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://rainplus.github.io/posts/java8to15-new-features/&amp;title=%e8%ae%b0%e5%bd%95%20java%20%20%e6%96%b0%e7%89%88%e6%9c%ac%e7%9a%84%e7%89%b9%e6%80%a7" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">记录 java  新版本的特性</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-10-04T21:14:46+08:00">October 4, 2020</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>#记录 java 新版本的特性</p>
+<h2 id="java8-sub3182014sub"><code>java8</code> <!-- raw HTML omitted -->3/18/2014<!-- raw HTML omitted --></h2>
+<h3 id="接口默认方法与静态方法">接口默认方法与静态方法</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">/**
+</span><span style="color:#75715e"> * 默认方法
+</span><span style="color:#75715e"> */</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">DefMethod</span> <span style="color:#f92672">{</span>
+    <span style="color:#75715e">/**
+</span><span style="color:#75715e">     * 已知一个接口的的属性都会被声明为 public final static
+</span><span style="color:#75715e">     * 而方法只会被声明为 public abstract
+</span><span style="color:#75715e">     *
+</span><span style="color:#75715e">     *  java8 现在给接口提供了默认实现,使用 default 关键字进行声明
+</span><span style="color:#75715e">     *  当实现这个接口的类型未进行覆盖方法里，会默认使用这个实现
+</span><span style="color:#75715e">     *
+</span><span style="color:#75715e">     *  如果是旧的方法，实现类必须实现这个接口的全部方法否着只能声明为 abstract 类
+</span><span style="color:#75715e">     */</span>
+
+    <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">(){</span>
+        <span style="color:#75715e">// do something
+</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">abstractMethod</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+
+</code></pre></div><h3 id="lambda-表达式">lambda 表达式</h3>
+<p>lambda 是希腊的第十一个字母（大写Λ，小写λ），高中知识：物理上的波长符号。
+<code>在 java 中的应用是简化内部类的写法。</code>但 lambda 表达式并不能表达所有的匿名类，只能用户取代函数接口</p>
+<p>举栗子：</p>
+<ol>
+<li>无参函数的简写</li>
+</ol>
+<p>旧方式：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">new</span> Thread<span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Runnable<span style="color:#f92672">(){</span>
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">run</span><span style="color:#f92672">(){</span>
+      <span style="color:#75715e">// do something
+</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span> 
+<span style="color:#f92672">});</span>
+</code></pre></div><p>使用 lambda 表达式：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">new</span> Thread<span style="color:#f92672">(()-&gt;{</span>
+    <span style="color:#75715e">//do something
+</span><span style="color:#75715e"></span><span style="color:#f92672">});</span>
+</code></pre></div><ol start="2">
+<li>带参数的简写</li>
+</ol>
+<p>如果要给一个字符串列表自定义比较器，按照字符串长度进行排序，在 java8 之前的写法：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> Arrays<span style="color:#f92672">.</span><span style="color:#a6e22e">asList</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;one&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;two&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;three&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;four&#34;</span><span style="color:#f92672">);</span>
+Collections<span style="color:#f92672">.</span><span style="color:#a6e22e">sort</span><span style="color:#f92672">(</span>list<span style="color:#f92672">,</span><span style="color:#66d9ef">new</span> Comparator<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;(){</span>
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">compare</span><span style="color:#f92672">(</span>String s1<span style="color:#f92672">,</span>String s2<span style="color:#f92672">){</span>
+        <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>s1 <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>s2 <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span>
+            <span style="color:#66d9ef">return</span> 1<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">return</span> s1<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">()-</span>s2<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">})</span>
+</code></pre></div><p>使用 java8 进行编写：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> Arrays<span style="color:#f92672">.</span><span style="color:#a6e22e">asList</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;one&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;two&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;three&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;four&#34;</span><span style="color:#f92672">);</span>
+Collections<span style="color:#f92672">.</span><span style="color:#a6e22e">sort</span><span style="color:#f92672">(</span>list<span style="color:#f92672">,(</span>s1<span style="color:#f92672">,</span>s2<span style="color:#f92672">)-&gt;{</span>
+        <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>s1 <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>s2 <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span>
+            <span style="color:#66d9ef">return</span> 1<span style="color:#f92672">;</span>
+         <span style="color:#66d9ef">return</span> s1<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">()-</span>s2<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">();});</span>
+</code></pre></div><h3 id="函数接口functional-interface">函数接口（Functional Interface）</h3>
+<ol>
+<li>函数接口定义指一个内部类中只有一个抽象的接口，强类型推断;（可以声明 default 接口）</li>
+<li>新增加注解：<code>@FunctionInterface</code> 显示化声明，编译检查。（建议显示声明，只是给人看）</li>
+</ol>
+<p>一般只要满足条件条件1 就认为是一个函数接口</p>
+<h3 id="方法与构造器引用">方法与构造器引用</h3>
+<p>可以操作一个对象中的公开的方法与构造器，通过限制符(::)进行引用</p>
+<p>举个粟子：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Object o <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Object<span style="color:#f92672">();</span>
+<span style="color:#75715e">// 旧的方法
+</span><span style="color:#75715e">// 新的方式
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">//静态方法与构造器的使用
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// 构造器
+</span><span style="color:#75715e"></span>Object:<span style="color:#f92672">:</span><span style="color:#66d9ef">new</span><span style="color:#f92672">;</span>
+<span style="color:#75715e">// 静态方法
+</span><span style="color:#75715e"></span>Integer:<span style="color:#f92672">:</span>valueOf<span style="color:#f92672">;</span>
+
+</code></pre></div><h3 id="lambda-变量作用域">lambda 变量作用域</h3>
+<p>传递给 lambda 的变量，因为 lambda 本身与匿名类有一定的相似性，所以变量的传递是也是基本一致的。</p>
+<ul>
+<li>接收本地变量
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> num <span style="color:#f92672">=</span>1<span style="color:#f92672">;</span>
+Converter<span style="color:#f92672">(</span>Integer<span style="color:#f92672">,</span>String<span style="color:#f92672">)</span> stringConverter <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>from<span style="color:#f92672">)</span> <span style="color:#f92672">-&gt;</span>String<span style="color:#f92672">.</span><span style="color:#a6e22e">valueOf</span><span style="color:#f92672">(</span>from<span style="color:#f92672">-&gt;</span>num<span style="color:#f92672">);</span>
+stringConverter<span style="color:#f92672">.</span><span style="color:#a6e22e">convert</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span> 
+<span style="color:#75715e">// 但如果不进行声明 final 也是可以的，代码也是有效的，
+</span><span style="color:#75715e">// 前提条件是 num 在这个作用域下是隐式地 final 
+</span><span style="color:#75715e">// 如果后面修改到 num 这个变量的值，这段代码就不会编译通过
+</span></code></pre></div></li>
+<li>接收静态变量与类属性
+lambda 可以对类属性与静态变量进行读写</li>
+<li>接收接口默认方法</li>
+</ul>
+<h3 id="内置的函数式接口">内置的函数式接口</h3>
+<p>java8 提供了大量的函数式接口，通过对旧的类（Comparator、Runnable）实现@FunctionalInterface 注解进行支持函数式变化 ，
+同时也提供了大量的新的函数式接口。</p>
+<ul>
+<li>
+<p>Predicates（断言）
+断言类函数式是返回 boolean 类型判断的函数。提供了各种复杂的逻辑判断。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Predicate<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> predicate <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>s<span style="color:#f92672">)-&gt;</span>s<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">()</span> <span style="color:#f92672">&gt;</span> 0<span style="color:#f92672">;</span>
+<span style="color:#75715e">// 转变回 java8 之前的形式：
+</span><span style="color:#75715e"></span>      Predicate<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> predicate <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Predicate<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;()</span> <span style="color:#f92672">{</span>
+           <span style="color:#a6e22e">@Override</span>
+           <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">test</span><span style="color:#f92672">(</span>String s<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+               <span style="color:#66d9ef">return</span> s<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">()</span> <span style="color:#f92672">&gt;</span> 0<span style="color:#f92672">;</span>
+           <span style="color:#f92672">}</span>
+       <span style="color:#f92672">};</span>
+ <span style="color:#75715e">// 断言类的内容 还提供了很多实现
+</span><span style="color:#75715e"></span> predicate<span style="color:#f92672">.</span><span style="color:#a6e22e">test</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;foo&#34;</span><span style="color:#f92672">);</span>              <span style="color:#75715e">// true
+</span><span style="color:#75715e"></span> predicate<span style="color:#f92672">.</span><span style="color:#a6e22e">negate</span><span style="color:#f92672">().</span><span style="color:#a6e22e">test</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;foo&#34;</span><span style="color:#f92672">);</span>     <span style="color:#75715e">// false
+</span><span style="color:#75715e"></span>   
+ Predicate<span style="color:#f92672">&lt;</span>Boolean<span style="color:#f92672">&gt;</span> nonNull <span style="color:#f92672">=</span> Objects<span style="color:#f92672">::</span>nonNull<span style="color:#f92672">;</span>
+ Predicate<span style="color:#f92672">&lt;</span>Boolean<span style="color:#f92672">&gt;</span> isNull <span style="color:#f92672">=</span> Objects<span style="color:#f92672">::</span>isNull<span style="color:#f92672">;</span>
+   
+ Predicate<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> isEmpty <span style="color:#f92672">=</span> String<span style="color:#f92672">::</span>isEmpty<span style="color:#f92672">;</span>
+ Predicate<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> isNotEmpty <span style="color:#f92672">=</span> isEmpty<span style="color:#f92672">.</span><span style="color:#a6e22e">negate</span><span style="color:#f92672">();</span>       
+ 
+</code></pre></div></li>
+<li>
+<p>Functions
+功能性的函数式接口：接受一个参数并生成一个结果，默认方法提供了一个链式的功能。</p>
+</li>
+</ul>
+<pre><code>Function&lt;String, Integer&gt; toInteger = Integer::valueOf;
+Function&lt;String, String&gt; backToString = toInteger.andThen(String::valueOf);
+
+backToString.apply(&quot;123&quot;);     // &quot;123&quot;
+</code></pre><ul>
+<li>Suppliers（提供器）
+不传递参数，但会生成一个结果，构造器就是一种 Suppliers</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Supplier<span style="color:#f92672">&lt;</span>Person<span style="color:#f92672">&gt;</span> personSupplier <span style="color:#f92672">=</span> Person<span style="color:#f92672">::</span><span style="color:#66d9ef">new</span><span style="color:#f92672">;</span>
+personSupplier<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">();</span>   <span style="color:#75715e">// new Person
+</span><span style="color:#75715e"></span>
+</code></pre></div><ul>
+<li>Consumers（消费者类）
+只传递一个参数 ，但没有结果返回 ，只作中间过程处理</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Consumer<span style="color:#f92672">&lt;</span>Person<span style="color:#f92672">&gt;</span> greeter <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>p<span style="color:#f92672">)</span> <span style="color:#f92672">-&gt;</span> System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello, &#34;</span> <span style="color:#f92672">+</span> p<span style="color:#f92672">.</span><span style="color:#a6e22e">firstName</span><span style="color:#f92672">);</span>
+greeter<span style="color:#f92672">.</span><span style="color:#a6e22e">accept</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Person<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Luke&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Skywalker&#34;</span><span style="color:#f92672">));</span>
+</code></pre></div><ul>
+<li>Comparators</li>
+</ul>
+<h3 id="optionals-比较器">Optionals （比较器）</h3>
+<pre><code>Comparator&lt;Person&gt; comparator = (p1, p2) -&gt; p1.firstName.compareTo(p2.firstName);
+
+Person p1 = new Person(&quot;John&quot;, &quot;Doe&quot;);
+Person p2 = new Person(&quot;Alice&quot;, &quot;Wonderland&quot;);
+
+comparator.compare(p1, p2);             // &gt; 0
+comparator.reversed().compare(p1, p2);  // &lt; 0
+</code></pre><h3 id="optionals">Optionals</h3>
+<p>Optional 并不是一个函数式接口，只是一个漂亮的防止 NullPointerException 的方式。</p>
+<h3 id="streams-流式操作">Streams 流式操作</h3>
+<ul>
+<li>Filter</li>
+<li>Sorted</li>
+<li>Map</li>
+<li>Match</li>
+<li>Count</li>
+<li>Reduce</li>
+</ul>
+<h3 id="parallel-streams-并行流式操作">Parallel Streams 并行流式操作</h3>
+<ul>
+<li>Sequential Sort</li>
+<li>Parallel Sort</li>
+</ul>
+<h3 id="maps">Maps</h3>
+<h3 id="date-api">Date API</h3>
+<ul>
+<li>Clock</li>
+<li>Timezones</li>
+<li>LocalTime</li>
+<li>LocalDate</li>
+<li>LocalDateTime</li>
+</ul>
+<h3 id="新的-javascript-引擎">新的 javascript 引擎</h3>
+<h3 id="base64-集成">Base64 集成</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.javacodegeeks.java8.base64<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.nio.charset.StandardCharsets<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.Base64<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Base64s</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">final</span> String text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Base64 finally in Java 8!&#34;</span><span style="color:#f92672">;</span>
+        
+        <span style="color:#66d9ef">final</span> String encoded <span style="color:#f92672">=</span> Base64
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">getEncoder</span><span style="color:#f92672">()</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">encodeToString</span><span style="color:#f92672">(</span> text<span style="color:#f92672">.</span><span style="color:#a6e22e">getBytes</span><span style="color:#f92672">(</span> StandardCharsets<span style="color:#f92672">.</span><span style="color:#a6e22e">UTF_8</span> <span style="color:#f92672">)</span> <span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span> encoded <span style="color:#f92672">);</span>
+        
+        <span style="color:#66d9ef">final</span> String decoded <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> String<span style="color:#f92672">(</span> 
+            Base64<span style="color:#f92672">.</span><span style="color:#a6e22e">getDecoder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">decode</span><span style="color:#f92672">(</span> encoded <span style="color:#f92672">),</span>
+            StandardCharsets<span style="color:#f92672">.</span><span style="color:#a6e22e">UTF_8</span> <span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span> decoded <span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h3 id="新的-java-工具">新的 Java 工具</h3>
+<h4 id="jjs">jjs</h4>
+<h4 id="jdeps">jdeps</h4>
+<h3 id="jvm-新特性">JVM 新特性</h3>
+<p>代替持久代（PermGem space)</p>
+<p>新：</p>
+<p>-XX:MetaSpaceSize
+-XX:MaxMetaSpaceSize</p>
+<p>旧：</p>
+<p>-XX:PermSize
+-XX:MaxPermSize</p>
+<h3 id="annotations-增强">Annotations 增强</h3>
+<p>新增类库，为解决 java 中常见的空指针异常导致程序无法正常运行</p>
+<h2 id="java9-sub9212017sub"><code>java9</code> <!-- raw HTML omitted -->9/21/2017<!-- raw HTML omitted --></h2>
+<h3 id="模块化module">模块化（Module）</h3>
+<h3 id="jshellrepl-read-eval-print-loop--交互式解释器">JSHELL:REPL（ Read Eval Print Loop ) 交互式解释器</h3>
+<h3 id="http2-支持">http/2 支持</h3>
+<h3 id="增强-javadocs">增强 javaDocs</h3>
+<p>原生输出 html5</p>
+<h3 id="增强-jar">增强 JAR</h3>
+<p>集成里面的类可以编译在不同 jdk 级别</p>
+<h3 id="集合类提供工厂方法">集合类提供工厂方法</h3>
+<h3 id="接口允许私有方法">接口允许私有方法</h3>
+<h3 id="改进-process-api">改进 Process API</h3>
+<h3 id="改进-stream-api">改进 Stream API</h3>
+<h3 id="try-catch-resource">try-catch-resource</h3>
+<h3 id="增强-deprecated">增强 @Deprecated</h3>
+<h3 id="内部类允许使用--钻石操作符----">内部类允许使用 「 钻石操作符 」 ( &lt;&gt; )</h3>
+<h3 id="改进-optional">改进 Optional</h3>
+<h3 id="多分辨率--multiresolution--图像-api">多分辨率 ( Multiresolution ) 图像 API</h3>
+<h3 id="改进-completablefuture-api">改进 CompletableFuture API</h3>
+<h3 id="轻量级-json原生支持">轻量级 JSON（原生支持）</h3>
+<h3 id="响应式流支持响应式编程">响应式流支持（响应式编程）</h3>
+<h2 id="java10-sub3202018sub"><code>java10</code> <!-- raw HTML omitted -->3/20/2018<!-- raw HTML omitted --></h2>
+<p>以下是 Java 10 中的引入的部分新特性。关于 Java 10 新特性更详细的介绍可<a href="https://openjdk.java.net/projects/jdk/10/">参考这里</a>。</p>
+<h3 id="heading"></h3>
+<h3 id="286-local-variable-type-inference-变量类型增强局部变量类型推断">286: Local-Variable Type Inference 变量类型增强[局部变量类型推断]</h3>
+<h3 id="296-consolidate-the-jdk-forest-into-a-single-repository--合并多个库到单个">296: Consolidate the JDK Forest into a Single Repository  合并多个库到单个</h3>
+<h3 id="304-garbage-collector-interface-清理垃圾接口">304: Garbage-Collector Interface 清理垃圾接口</h3>
+<h3 id="307-parallel-full-gc-for-g1--并行-g1-垃圾回收">307: Parallel Full GC for G1  并行 G1 垃圾回收</h3>
+<h3 id="310-application-class-data-sharing-应用程序类数据分享">310: Application Class-Data Sharing 应用程序类数据分享</h3>
+<h3 id="312-thread-local-handshakes-线程池握手">312: Thread-Local Handshakes 线程池握手</h3>
+<h3 id="313-remove-the-native-header-generation-tool-javah-移除-javah-工具">313: Remove the Native-Header Generation Tool (javah) 移除 javah 工具</h3>
+<h3 id="314-additional-unicode-language-tag-extensions-增加其他言语-unicode-语言标签支持">314: Additional Unicode Language-Tag Extensions 增加其他言语 Unicode 语言标签支持</h3>
+<h3 id="316-heap-allocation-on-alternative-memory-devices--heap-内存分配">316: Heap Allocation on Alternative Memory Devices  heap 内存分配</h3>
+<h3 id="317-experimental-java-based-jit-compiler-试验-jit-编译器">317: Experimental Java-Based JIT Compiler 试验 JIT 编译器</h3>
+<h3 id="319-root-certificates--根证书认证">319: Root Certificates  根证书认证</h3>
+<h3 id="322-time-based-release-versioning-基于时间发行版本的控制">322: Time-Based Release Versioning 基于时间发行版本的控制</h3>
+<h2 id="java11-sub9252018sub"><code>java11</code> <!-- raw HTML omitted -->9/25/2018<!-- raw HTML omitted --></h2>
+<h3 id="181-nest-based-access-control">181: Nest-Based Access Control</h3>
+<h3 id="309-dynamic-class-file-constants">309: Dynamic Class-File Constants</h3>
+<h3 id="315-improve-aarch64-intrinsics">315: Improve Aarch64 Intrinsics</h3>
+<h3 id="318-epsilon-a-no-op-garbage-collector">318: Epsilon: A No-Op Garbage Collector</h3>
+<h3 id="320-remove-the-java-ee-and-corba-modules">320: Remove the Java EE and CORBA Modules</h3>
+<h3 id="321-http-client-standard">321: HTTP Client (Standard)</h3>
+<h3 id="323-local-variable-syntax-for-lambda-parameters">323: Local-Variable Syntax for Lambda Parameters</h3>
+<h3 id="324-key-agreement-with-curve25519-and-curve448">324: Key Agreement with Curve25519 and Curve448</h3>
+<h3 id="327-unicode-10">327: Unicode 10</h3>
+<h3 id="328-flight-recorder">328: Flight Recorder</h3>
+<h3 id="329-chacha20-and-poly1305-cryptographic-algorithms">329: ChaCha20 and Poly1305 Cryptographic Algorithms</h3>
+<h3 id="330-launch-single-file-source-code-programs">330: Launch Single-File Source-Code Programs</h3>
+<h3 id="331-low-overhead-heap-profiling">331: Low-Overhead Heap Profiling</h3>
+<h3 id="332-transport-layer-security-tls-13">332: Transport Layer Security (TLS) 1.3</h3>
+<h3 id="333-zgc-a-scalable-low-latency-garbage-collector-experimental">333: ZGC: A Scalable Low-Latency Garbage Collector    (Experimental)</h3>
+<h3 id="335-deprecate-the-nashorn-javascript-engine">335: Deprecate the Nashorn JavaScript Engine</h3>
+<h3 id="336-deprecate-the-pack200-tools-and-api">336: Deprecate the Pack200 Tools and API</h3>
+<h2 id="java12-sub3192019sub"><code>java12</code> <!-- raw HTML omitted -->3/19/2019<!-- raw HTML omitted --></h2>
+<h3 id="189shenandoah-a-low-pause-time-garbage-collector-experimental">189:	Shenandoah: A Low-Pause-Time Garbage Collector (Experimental)</h3>
+<h3 id="230microbenchmark-suite">230:	Microbenchmark Suite</h3>
+<h3 id="325switch-expressions-preview">325:	Switch Expressions (Preview)</h3>
+<h3 id="334jvm-constants-api">334:	JVM Constants API</h3>
+<h3 id="340one-aarch64-port-not-two">340:	One AArch64 Port, Not Two</h3>
+<h3 id="341default-cds-archives">341:	Default CDS Archives</h3>
+<h3 id="344abortable-mixed-collections-for-g1">344:	Abortable Mixed Collections for G1</h3>
+<h3 id="346promptly-return-unused-committed-memory-from-g1">346:	Promptly Return Unused Committed Memory from G1</h3>
+<h2 id="java13-sub9172019sub"><code>java13</code> <!-- raw HTML omitted -->9/17/2019<!-- raw HTML omitted --></h2>
+<h3 id="350dynamic-cds-archives">350:	Dynamic CDS Archives</h3>
+<h3 id="351zgc-uncommit-unused-memory">351:	ZGC: Uncommit Unused Memory</h3>
+<h3 id="353reimplement-the-legacy-socket-api">353:	Reimplement the Legacy Socket API</h3>
+<h3 id="354switch-expressions-preview">354:	Switch Expressions (Preview)</h3>
+<h3 id="355text-blocks-preview">355:	Text Blocks (Preview)</h3>
+<h2 id="java14-sub3172020sub"><code>java14</code> <!-- raw HTML omitted -->3/17/2020<!-- raw HTML omitted --></h2>
+<h3 id="305pattern-matching-for-instanceof-preview">305:	Pattern Matching for instanceof (Preview)</h3>
+<h3 id="343packaging-tool-incubator">343:	Packaging Tool (Incubator)</h3>
+<h3 id="345numa-aware-memory-allocation-for-g1">345:	NUMA-Aware Memory Allocation for G1</h3>
+<h3 id="349jfr-event-streaming">349:	JFR Event Streaming</h3>
+<h3 id="352non-volatile-mapped-byte-buffers">352:	Non-Volatile Mapped Byte Buffers</h3>
+<h3 id="358helpful-nullpointerexceptions">358:	Helpful NullPointerExceptions</h3>
+<h3 id="359records-preview">359:	Records (Preview)</h3>
+<h3 id="361switch-expressions-standard">361:	Switch Expressions (Standard)</h3>
+<h3 id="362deprecate-the-solaris-and-sparc-ports">362:	Deprecate the Solaris and SPARC Ports</h3>
+<h3 id="363remove-the-concurrent-mark-sweep-cms-garbage-collector">363:	Remove the Concurrent Mark Sweep (CMS) Garbage Collector</h3>
+<h3 id="364zgc-on-macos">364:	ZGC on macOS</h3>
+<h3 id="365zgc-on-windows">365:	ZGC on Windows</h3>
+<h3 id="366deprecate-the-parallelscavenge--serialold-gc-combination">366:	Deprecate the ParallelScavenge + SerialOld GC Combination</h3>
+<h3 id="367remove-the-pack200-tools-and-api">367:	Remove the Pack200 Tools and API</h3>
+<h3 id="368text-blocks-second-preview">368:	Text Blocks (Second Preview)</h3>
+<h3 id="370foreign-memory-access-api-incubator">370:	Foreign-Memory Access API (Incubator)</h3>
+<h2 id="java15-sub9152020sub"><code>java15</code> <!-- raw HTML omitted -->9/15/2020<!-- raw HTML omitted --></h2>
+<h3 id="339edwards-curve-digital-signature-algorithm-eddsa">339:	Edwards-Curve Digital Signature Algorithm (EdDSA)</h3>
+<h3 id="360sealed-classes-preview">360:	Sealed Classes (Preview)</h3>
+<h3 id="371hidden-classes">371:	Hidden Classes</h3>
+<h3 id="372remove-the-nashorn-javascript-engine">372:	Remove the Nashorn JavaScript Engine</h3>
+<h3 id="373reimplement-the-legacy-datagramsocket-api">373:	Reimplement the Legacy DatagramSocket API</h3>
+<h3 id="374disable-and-deprecate-biased-locking">374:	Disable and Deprecate Biased Locking</h3>
+<h3 id="375pattern-matching-for-instanceof-second-preview">375:	Pattern Matching for instanceof (Second Preview)</h3>
+<h3 id="377zgc-a-scalable-low-latency-garbage-collector">377:	ZGC: A Scalable Low-Latency Garbage Collector</h3>
+<h3 id="378text-blocks">378:	Text Blocks</h3>
+<h3 id="379shenandoah-a-low-pause-time-garbage-collector">379:	Shenandoah: A Low-Pause-Time Garbage Collector</h3>
+<h3 id="381remove-the-solaris-and-sparc-ports">381:	Remove the Solaris and SPARC Ports</h3>
+<h3 id="383foreign-memory-access-api-second-incubator">383:	Foreign-Memory Access API (Second Incubator)</h3>
+<h3 id="384records-second-preview">384:	Records (Second Preview)</h3>
+<h3 id="385deprecate-rmi-activation-for-removal">385:	Deprecate RMI Activation for Removal</h3>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://rainplus.github.io" >
+    &copy;  个人技术积累 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

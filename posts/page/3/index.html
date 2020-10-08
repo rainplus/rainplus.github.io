@@ -114,17 +114,16 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-      <a href="https://rainplus.github.io/posts/git-hooks-pre-commit-format/" class="link black dim">
-        Git Hooks Pre Commit Format
+      <a href="https://rainplus.github.io/posts/java8to15-new-features/" class="link black dim">
+        记录 java  新版本的特性
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Git 钩子使用与 commit 代码注解 提供代码应该有一套格式模板的规范,方便日后整理,如: 快捷把 commit 导出到周报表,提高效率.
-Git Hooks 介绍 服务端 Git Hooks hooks 存放在服务端,对所有人生效
-客户端 Git Hooks hooks 存放在 .git/hooks 目录下,每个repo 在init 的时候会自成一套模板
-/repo/.git/hooks ├── applypatch-msg.sample ├── commit-msg.sample ├── fsmonitor-watchman.sample ├── post-update.sample ├── pre-applypatch.sample ├── pre-commit.sample ├── pre-merge-commit.sample ├── pre-push.sample ├── pre-rebase.sample ├── pre-receive.sample ├── prepare-commit-msg.sample └── update.sample 0 directories, 12 files 示例文件使用了 .sample 结尾,想要生效就移除文件后缀
-提供一个 commit format 提交模板,记得赋与可执行权限
- #!/bin/bash # filename: commit-msg MSG=`awk '{printf(&quot;%s&quot;,$0)}' $1` if [[ $MSG =~ ^(feat|fix|test|refactor|docs|style|chroe)\(.
+      #记录 java 新版本的特性
+java8 3/18/2014 接口默认方法与静态方法 /** * 默认方法 */ public interface DefMethod { /** * 已知一个接口的的属性都会被声明为 public final static * 而方法只会被声明为 public abstract * * java8 现在给接口提供了默认实现,使用 default 关键字进行声明 * 当实现这个接口的类型未进行覆盖方法里，会默认使用这个实现 * * 如果是旧的方法，实现类必须实现这个接口的全部方法否着只能声明为 abstract 类 */ default void method(){ // do something  } void abstractMethod(); } lambda 表达式 lambda 是希腊的第十一个字母（大写Λ，小写λ），高中知识：物理上的波长符号。 在 java 中的应用是简化内部类的写法。但 lambda 表达式并不能表达所有的匿名类，只能用户取代函数接口
+举栗子：
+ 无参函数的简写  旧方式：
+new Thread(new Runnable(){ @Override public void run(){ // do something  } }); 使用 lambda 表达式：
     </div>
   </div>
 </div>
@@ -134,32 +133,15 @@ Git Hooks 介绍 服务端 Git Hooks hooks 存放在服务端,对所有人生效
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-      <a href="https://rainplus.github.io/posts/java-pass-by-value/" class="link black dim">
-        Java Pass by Value
+      <a href="https://rainplus.github.io/posts/reinstall-macos-catalina/" class="link black dim">
+        重装 MacOs catalina
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      java 的值传递 在理解这篇文章之间,想问问是否有过样的想法: java 存在着值传递与引用传递,并且在传统基本类型的时候是值传递,而传输对象的时候是引用传递,但 String与 Integer等 这些基本包装类型对象采用的是引用传递,所以发生在 String 与 Integer 等对象传递的时候,原参数不变的现象就有了合适的答案. 这样看来是不是觉得对的呢?
-先说结论: java 中只存在值传递 ,至于为什么在传递对象的时候什么发生变化,而已 String与包装类型不会,由下面进行解答.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://rainplus.github.io/posts/markdown-practice/" class="link black dim">
-        Markdown Practice
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      快速上手 Markdown 书写语言 Markdown 是一种标记语言,允许众使用易读的语言写的纯文本格式编写文档,然后转换成有效的 XHTML(或者 HTML).
-变体:
- CommonMark: 2012年提出对 Markdown 进行一个标准化工作. GFM(Github Flavored Markdown,基于 CommonMark) Markdown Extra: 基于 PHP,Python,Ruby 中实现 Markdown. 拓展了 Markdown 以前没有的功能:HTML 块,代码块,表格,定义清单,脚注,缩写&hellip;  语法 Markdown 的语法分为几大部分:
- 标题 段落与换行 引用 列表  无序列表 有序列表 嵌套列表   分隔符&lt; hr&gt; 超链接 图片 强调 字符转义 拓展用法(非原生标准)  删除线 代码块  表格 Task List      标题 Markdown 的标题划分为两种方式: 大标题(=========) 和小标题(&mdash;&mdash;&mdash;) 与六级标题(h1-h6) 进行划分
-大标题与小标题 === 表示h1 大标题 --- 表示h2 小标题
+      重装 MacOs catalina 重装方式 参考官方 Option-Command-R: 从互联网安装最新版本的 macOS Shift-Option-Command-R: 从互联网重新安装您电脑原始版本的 macOS Command-R: 从电脑上的内建恢复磁盘中重新安装 macOS
+前面两种方式都需要连网
+安装 Homebrew /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot; 提示安装超时，是因为 GFW 的原因，可以变更 hosts(不一定可用，请自行查询):
+# GitHub Start 52.74.223.119 github.com 192.30.253.119 gist.github.com 54.169.195.247 api.github.com 185.199.111.153 assets-cdn.github.com 151.101.76.133 raw.githubusercontent.com 151.101.108.133 user-images.githubusercontent.com 151.101.76.133 gist.githubusercontent.com 151.101.76.133 cloud.githubusercontent.com 151.101.76.133 camo.githubusercontent.com 151.101.76.133 avatars0.githubusercontent.com 151.101.76.133 avatars1.githubusercontent.com 151.101.76.133 avatars2.githubusercontent.com 151.101.76.133 avatars3.githubusercontent.com 151.101.76.133 avatars4.githubusercontent.com 151.101.76.133 avatars5.githubusercontent.com 151.101.76.133 avatars6.githubusercontent.com 151.101.76.133 avatars7.githubusercontent.com 151.101.76.133 avatars8.githubusercontent.com # GitHub End Iterm2 shell 集成 方法 1： curl -L https://iterm2.
     </div>
   </div>
 </div>
@@ -170,20 +152,20 @@ Git Hooks 介绍 服务端 Git Hooks hooks 存放在服务端,对所有人生效
   <li class="page-item">
     <a href="/posts/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
   </li>
-  <li class="page-item disabled">
-    <a  class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+  <li class="page-item">
+    <a href="/posts/page/2/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
   </li>
-  <li class="page-item active">
+  <li class="page-item">
     <a class="page-link" href="/posts/">1</a>
   </li>
   <li class="page-item">
     <a class="page-link" href="/posts/page/2/">2</a>
   </li>
-  <li class="page-item">
+  <li class="page-item active">
     <a class="page-link" href="/posts/page/3/">3</a>
   </li>
-  <li class="page-item">
-    <a href="/posts/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+  <li class="page-item disabled">
+    <a  class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
   </li>
   <li class="page-item">
     <a href="/posts/page/3/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>

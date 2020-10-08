@@ -6,7 +6,69 @@
     <description>Recent content on 个人技术积累</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 04 Oct 2020 21:14:46 +0800</lastBuildDate><atom:link href="https://rainplus.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Oct 2020 06:27:13 +0800</lastBuildDate><atom:link href="https://rainplus.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Hooks Pre Commit Format</title>
+      <link>https://rainplus.github.io/posts/git-hooks-pre-commit-format/</link>
+      <pubDate>Fri, 09 Oct 2020 06:27:13 +0800</pubDate>
+      
+      <guid>https://rainplus.github.io/posts/git-hooks-pre-commit-format/</guid>
+      <description>Git 钩子使用与 commit 代码注解 提供代码应该有一套格式模板的规范,方便日后整理,如: 快捷把 commit 导出到周报表,提高效率.
+Git Hooks 介绍 服务端 Git Hooks hooks 存放在服务端,对所有人生效
+客户端 Git Hooks hooks 存放在 .git/hooks 目录下,每个repo 在init 的时候会自成一套模板
+/repo/.git/hooks ├── applypatch-msg.sample ├── commit-msg.sample ├── fsmonitor-watchman.sample ├── post-update.sample ├── pre-applypatch.sample ├── pre-commit.sample ├── pre-merge-commit.sample ├── pre-push.sample ├── pre-rebase.sample ├── pre-receive.sample ├── prepare-commit-msg.sample └── update.sample 0 directories, 12 files 示例文件使用了 .sample 结尾,想要生效就移除文件后缀
+提供一个 commit format 提交模板,记得赋与可执行权限
+ #!/bin/bash # filename: commit-msg MSG=`awk &#39;{printf(&amp;quot;%s&amp;quot;,$0)}&#39; $1` if [[ $MSG =~ ^(feat|fix|test|refactor|docs|style|chroe)\(.</description>
+    </item>
+    
+    <item>
+      <title>Java Pass by Value</title>
+      <link>https://rainplus.github.io/posts/java-pass-by-value/</link>
+      <pubDate>Thu, 08 Oct 2020 01:24:13 +0800</pubDate>
+      
+      <guid>https://rainplus.github.io/posts/java-pass-by-value/</guid>
+      <description>java 的值传递 在理解这篇文章之间,想问问是否有过样的想法: java 存在着值传递与引用传递,并且在传统基本类型的时候是值传递,而传输对象的时候是引用传递,但 String与 Integer等 这些基本包装类型对象采用的是引用传递,所以发生在 String 与 Integer 等对象传递的时候,原参数不变的现象就有了合适的答案. 这样看来是不是觉得对的呢?
+先说结论: java 中只存在值传递 ,至于为什么在传递对象的时候什么发生变化,而已 String与包装类型不会,由下面进行解答.</description>
+    </item>
+    
+    <item>
+      <title>Markdown Practice</title>
+      <link>https://rainplus.github.io/posts/markdown-practice/</link>
+      <pubDate>Wed, 07 Oct 2020 04:14:40 +0800</pubDate>
+      
+      <guid>https://rainplus.github.io/posts/markdown-practice/</guid>
+      <description>快速上手 Markdown 书写语言 Markdown 是一种标记语言,允许众使用易读的语言写的纯文本格式编写文档,然后转换成有效的 XHTML(或者 HTML).
+变体:
+ CommonMark: 2012年提出对 Markdown 进行一个标准化工作. GFM(Github Flavored Markdown,基于 CommonMark) Markdown Extra: 基于 PHP,Python,Ruby 中实现 Markdown. 拓展了 Markdown 以前没有的功能:HTML 块,代码块,表格,定义清单,脚注,缩写&amp;hellip;  语法 Markdown 的语法分为几大部分:
+ 标题 段落与换行 引用 列表  无序列表 有序列表 嵌套列表   分隔符&amp;lt; hr&amp;gt; 超链接 图片 强调 字符转义 拓展用法(非原生标准)  删除线 代码块  表格 Task List      标题 Markdown 的标题划分为两种方式: 大标题(=========) 和小标题(&amp;mdash;&amp;mdash;&amp;mdash;) 与六级标题(h1-h6) 进行划分
+大标题与小标题 === 表示h1 大标题 --- 表示h2 小标题</description>
+    </item>
+    
+    <item>
+      <title>Vim Markdown Preview</title>
+      <link>https://rainplus.github.io/posts/vim-markdown-preview/</link>
+      <pubDate>Tue, 06 Oct 2020 23:34:47 +0800</pubDate>
+      
+      <guid>https://rainplus.github.io/posts/vim-markdown-preview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>面向对象</title>
+      <link>https://rainplus.github.io/posts/oop/</link>
+      <pubDate>Tue, 06 Oct 2020 22:08:22 +0800</pubDate>
+      
+      <guid>https://rainplus.github.io/posts/oop/</guid>
+      <description>#面向对象
+基础概念 C 语言是一门面对过程的语言，编写的过程是按步骤一步一步实现，依次调用即可。 相对于面向过程，Java 是一种对象语言，对其中的步骤进行抽象，形成一个个对象，由对象之间进行协作解决问题。
+举粟子： 想要造一辆车，先要定义车属性的内容，汇总一个类：Car。
+``` class Car{ pirvate Window[] windows = new Windows[6]; ... private Wheel[] wheels = new Wheel[4]; public void driver(String direction){ .... } } ```  再举粟子对比面向过程：
+   面向过程 面向对象     开始&amp;ndash;&amp;gt;走棋&amp;ndash;&amp;gt;规则判断&amp;ndash;&amp;gt;循环 创建黑白演算对象,棋盘对象,规则对象,这些对象各司其职:棋子负责演算,棋盘负责画布,规则负责判断,所有对象都只创建一次,组合起来可以重复使用,避免重复造轮子.    优劣对比 面向对象:占用资源相对高,速度相对慢 面向过程:占用资源相对少,速度相对快
+面向对象的特征  封装  将事物抽象成类,对外可以隐藏不关注的细节. 对象开放接口,同时又保留私有部分.
+  继承 这是一种承接已有对象能力的方式,对现存的对象的能力的拓展,避免重复造轮子. 衍生出的概念:父类(基类,超类),子类(派生类) 在 java 里面的表现形式: 实现接口(implements)和类与接口继承(extends)
+  多态 多态的基于是继承,表现为同一个类型,但因为具体实例的不同,而表现出不同的形式. 具体描述为: 父类与子类,现在子类在实现自己的逻辑过程中可以有属于自己的特性.</description>
+    </item>
+    
     <item>
       <title>个人的 vimrc</title>
       <link>https://rainplus.github.io/posts/personal-vim-config/</link>
@@ -15,7 +77,20 @@
       <guid>https://rainplus.github.io/posts/personal-vim-config/</guid>
       <description>个人的 vimrc 趁着国庆假期，在家重新撸一一遍 MacOs 的 重装，所以很多东西都得重来，vimrc 配置是基本中的基本吧
 每个使用 vim 的的人者希望 vim 比idea 等功能都厉害，当然 vim 本身如此 使用 vi/vim 就是简单，并且是服务器上的标配，在服务器上是没有图形工具的，当然你机子性能足够。。你也是可以装桌面的，但服务器如此宝贵的资源，你真的要浪费给图形应用么？
-VIM 的最基本配置  首要是在自己的 terminal 中能快速使用 vim  alias vi=&amp;quot;vim&amp;quot;  配置自己的 .vimrc 文件  &amp;quot; 配置自己合适的 vimrc &amp;quot;set background=light &amp;quot;colorscheme solarized &amp;quot;定制主题,会跟随 iterm2 的颜色 let g:solarized_termcolors=256 &amp;quot;色域范围 syntax on &amp;quot; 开启语法高亮 set number &amp;quot; 显示等号 set relativenumber &amp;quot; 显示相对行号 &amp;quot; 自动打开 NERDTree &amp;quot;autocmd vimenter * NERDTree &amp;quot; 未指定文件的时候打开 NERDTree autocmd StdinReadPre * let s:std_in=1 autocmd VimEnter * if argc() == 0 &amp;amp;&amp;amp; !</description>
+VIM 的最基本配置  首要是在自己的 terminal 中能快速使用 vim macos 自带的 vim 有些缺陷，安装python3.8 版本  # 更新一个 brew install vim --with-override-system-vi alias vi=&amp;quot;vim&amp;quot;  配置自己的 .vimrc 文件  &amp;quot; 配置自己合适的 vimrc &amp;quot;set background=light &amp;quot;colorscheme solarized &amp;quot;定制主题,会跟随 iterm2 的颜色 let g:solarized_termcolors=256 &amp;quot;色域范围 syntax on &amp;quot; 开启语法高亮 set number &amp;quot; 显示等号 set relativenumber &amp;quot; 显示相对行号 &amp;quot; 自动打开 NERDTree &amp;quot;autocmd vimenter * NERDTree &amp;quot; 未指定文件的时候打开 NERDTree autocmd StdinReadPre * let s:std_in=1 autocmd VimEnter * if argc() == 0 &amp;amp;&amp;amp; !</description>
+    </item>
+    
+    <item>
+      <title>记录 java  新版本的特性</title>
+      <link>https://rainplus.github.io/posts/java8to15-new-features/</link>
+      <pubDate>Sun, 04 Oct 2020 21:14:46 +0800</pubDate>
+      
+      <guid>https://rainplus.github.io/posts/java8to15-new-features/</guid>
+      <description>#记录 java 新版本的特性
+java8 3/18/2014 接口默认方法与静态方法 /** * 默认方法 */ public interface DefMethod { /** * 已知一个接口的的属性都会被声明为 public final static * 而方法只会被声明为 public abstract * * java8 现在给接口提供了默认实现,使用 default 关键字进行声明 * 当实现这个接口的类型未进行覆盖方法里，会默认使用这个实现 * * 如果是旧的方法，实现类必须实现这个接口的全部方法否着只能声明为 abstract 类 */ default void method(){ // do something  } void abstractMethod(); } lambda 表达式 lambda 是希腊的第十一个字母（大写Λ，小写λ），高中知识：物理上的波长符号。 在 java 中的应用是简化内部类的写法。但 lambda 表达式并不能表达所有的匿名类，只能用户取代函数接口
+举栗子：
+ 无参函数的简写  旧方式：
+new Thread(new Runnable(){ @Override public void run(){ // do something  } }); 使用 lambda 表达式：</description>
     </item>
     
     <item>

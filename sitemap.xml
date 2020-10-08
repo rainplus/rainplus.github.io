@@ -3,21 +3,91 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rainplus.github.io/posts/git-hooks-pre-commit-format/</loc>
+    <lastmod>2020-10-09T06:27:13+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://rainplus.github.io/posts/</loc>
-    <lastmod>2020-10-04T21:14:46+08:00</lastmod>
+    <lastmod>2020-10-09T06:27:13+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://rainplus.github.io/</loc>
-    <lastmod>2020-10-04T21:14:46+08:00</lastmod>
+    <lastmod>2020-10-09T06:27:13+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rainplus.github.io/posts/java-pass-by-value/</loc>
+    <lastmod>2020-10-08T01:24:13+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rainplus.github.io/posts/markdown-practice/</loc>
+    <lastmod>2020-10-07T04:14:40+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rainplus.github.io/posts/vim-markdown-preview/</loc>
+    <lastmod>2020-10-06T23:34:47+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rainplus.github.io/series/java%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/</loc>
+    <lastmod>2020-10-06T22:08:22+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rainplus.github.io/series/</loc>
+    <lastmod>2020-10-06T22:08:22+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rainplus.github.io/tags/</loc>
+    <lastmod>2020-10-06T22:08:22+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rainplus.github.io/tags/%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2020-10-06T22:08:22+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rainplus.github.io/posts/oop/</loc>
+    <lastmod>2020-10-06T22:08:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://rainplus.github.io/posts/personal-vim-config/</loc>
+    <lastmod>2020-10-04T21:14:46+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rainplus.github.io/posts/java8to15-new-features/</loc>
     <lastmod>2020-10-04T21:14:46+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -32,12 +102,6 @@
   
   <url>
     <loc>https://rainplus.github.io/categories/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://rainplus.github.io/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

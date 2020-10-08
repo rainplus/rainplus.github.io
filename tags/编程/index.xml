@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程 on 个人技术积累</title>
+    <link>https://rainplus.github.io/tags/%E7%BC%96%E7%A8%8B/</link>
+    <description>Recent content in 编程 on 个人技术积累</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 06 Oct 2020 22:08:22 +0800</lastBuildDate><atom:link href="https://rainplus.github.io/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>面向对象</title>
+      <link>https://rainplus.github.io/posts/oop/</link>
+      <pubDate>Tue, 06 Oct 2020 22:08:22 +0800</pubDate>
+      
+      <guid>https://rainplus.github.io/posts/oop/</guid>
+      <description>#面向对象
+基础概念 C 语言是一门面对过程的语言，编写的过程是按步骤一步一步实现，依次调用即可。 相对于面向过程，Java 是一种对象语言，对其中的步骤进行抽象，形成一个个对象，由对象之间进行协作解决问题。
+举粟子： 想要造一辆车，先要定义车属性的内容，汇总一个类：Car。
+``` class Car{ pirvate Window[] windows = new Windows[6]; ... private Wheel[] wheels = new Wheel[4]; public void driver(String direction){ .... } } ```  再举粟子对比面向过程：
+   面向过程 面向对象     开始&amp;ndash;&amp;gt;走棋&amp;ndash;&amp;gt;规则判断&amp;ndash;&amp;gt;循环 创建黑白演算对象,棋盘对象,规则对象,这些对象各司其职:棋子负责演算,棋盘负责画布,规则负责判断,所有对象都只创建一次,组合起来可以重复使用,避免重复造轮子.    优劣对比 面向对象:占用资源相对高,速度相对慢 面向过程:占用资源相对少,速度相对快
+面向对象的特征  封装  将事物抽象成类,对外可以隐藏不关注的细节. 对象开放接口,同时又保留私有部分.
+  继承 这是一种承接已有对象能力的方式,对现存的对象的能力的拓展,避免重复造轮子. 衍生出的概念:父类(基类,超类),子类(派生类) 在 java 里面的表现形式: 实现接口(implements)和类与接口继承(extends)
+  多态 多态的基于是继承,表现为同一个类型,但因为具体实例的不同,而表现出不同的形式. 具体描述为: 父类与子类,现在子类在实现自己的逻辑过程中可以有属于自己的特性.</description>
+    </item>
+    
+  </channel>
+</rss>
