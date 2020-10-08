@@ -175,30 +175,98 @@ Git Hooks 介绍 服务端 Git Hooks hooks 存放在服务端,对所有人生效
 </div>
 </div>
       
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="https://rainplus.github.io/posts/vim-markdown-preview/" class="link black dim">
+        Vim Markdown Preview
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="https://rainplus.github.io/posts/oop/" class="link black dim">
+        面向对象
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      #面向对象
+基础概念 C 语言是一门面对过程的语言，编写的过程是按步骤一步一步实现，依次调用即可。 相对于面向过程，Java 是一种对象语言，对其中的步骤进行抽象，形成一个个对象，由对象之间进行协作解决问题。
+举粟子： 想要造一辆车，先要定义车属性的内容，汇总一个类：Car。
+``` class Car{ pirvate Window[] windows = new Windows[6]; ... private Wheel[] wheels = new Wheel[4]; public void driver(String direction){ .... } } ```  再举粟子对比面向过程：
+   面向过程 面向对象     开始&ndash;&gt;走棋&ndash;&gt;规则判断&ndash;&gt;循环 创建黑白演算对象,棋盘对象,规则对象,这些对象各司其职:棋子负责演算,棋盘负责画布,规则负责判断,所有对象都只创建一次,组合起来可以重复使用,避免重复造轮子.    优劣对比 面向对象:占用资源相对高,速度相对慢 面向过程:占用资源相对少,速度相对快
+面向对象的特征  封装  将事物抽象成类,对外可以隐藏不关注的细节. 对象开放接口,同时又保留私有部分.
+  继承 这是一种承接已有对象能力的方式,对现存的对象的能力的拓展,避免重复造轮子. 衍生出的概念:父类(基类,超类),子类(派生类) 在 java 里面的表现形式: 实现接口(implements)和类与接口继承(extends)
+  多态 多态的基于是继承,表现为同一个类型,但因为具体实例的不同,而表现出不同的形式. 具体描述为: 父类与子类,现在子类在实现自己的逻辑过程中可以有属于自己的特性.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="https://rainplus.github.io/posts/personal-vim-config/" class="link black dim">
+        个人的 vimrc
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      个人的 vimrc 趁着国庆假期，在家重新撸一一遍 MacOs 的 重装，所以很多东西都得重来，vimrc 配置是基本中的基本吧
+每个使用 vim 的的人者希望 vim 比idea 等功能都厉害，当然 vim 本身如此 使用 vi/vim 就是简单，并且是服务器上的标配，在服务器上是没有图形工具的，当然你机子性能足够。。你也是可以装桌面的，但服务器如此宝贵的资源，你真的要浪费给图形应用么？
+VIM 的最基本配置  首要是在自己的 terminal 中能快速使用 vim macos 自带的 vim 有些缺陷，安装python3.8 版本  # 更新一个 brew install vim --with-override-system-vi alias vi=&quot;vim&quot;  配置自己的 .vimrc 文件  &quot; 配置自己合适的 vimrc &quot;set background=light &quot;colorscheme solarized &quot;定制主题,会跟随 iterm2 的颜色 let g:solarized_termcolors=256 &quot;色域范围 syntax on &quot; 开启语法高亮 set number &quot; 显示等号 set relativenumber &quot; 显示相对行号 &quot; 自动打开 NERDTree &quot;autocmd vimenter * NERDTree &quot; 未指定文件的时候打开 NERDTree autocmd StdinReadPre * let s:std_in=1 autocmd VimEnter * if argc() == 0 &amp;&amp; !
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="https://rainplus.github.io/posts/java8to15-new-features/" class="link black dim">
+        记录 java  新版本的特性
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      #记录 java 新版本的特性
+java8 3/18/2014 接口默认方法与静态方法 /** * 默认方法 */ public interface DefMethod { /** * 已知一个接口的的属性都会被声明为 public final static * 而方法只会被声明为 public abstract * * java8 现在给接口提供了默认实现,使用 default 关键字进行声明 * 当实现这个接口的类型未进行覆盖方法里，会默认使用这个实现 * * 如果是旧的方法，实现类必须实现这个接口的全部方法否着只能声明为 abstract 类 */ default void method(){ // do something  } void abstractMethod(); } lambda 表达式 lambda 是希腊的第十一个字母（大写Λ，小写λ），高中知识：物理上的波长符号。 在 java 中的应用是简化内部类的写法。但 lambda 表达式并不能表达所有的匿名类，只能用户取代函数接口
+举栗子：
+ 无参函数的简写  旧方式：
+new Thread(new Runnable(){ @Override public void run(){ // do something  } }); 使用 lambda 表达式：
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="https://rainplus.github.io/posts/reinstall-macos-catalina/" class="link black dim">
+        重装 MacOs catalina
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      重装 MacOs catalina 重装方式 参考官方 Option-Command-R: 从互联网安装最新版本的 macOS Shift-Option-Command-R: 从互联网重新安装您电脑原始版本的 macOS Command-R: 从电脑上的内建恢复磁盘中重新安装 macOS
+前面两种方式都需要连网
+安装 Homebrew /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot; 提示安装超时，是因为 GFW 的原因，可以变更 hosts(不一定可用，请自行查询):
+# GitHub Start 52.74.223.119 github.com 192.30.253.119 gist.github.com 54.169.195.247 api.github.com 185.199.111.153 assets-cdn.github.com 151.101.76.133 raw.githubusercontent.com 151.101.108.133 user-images.githubusercontent.com 151.101.76.133 gist.githubusercontent.com 151.101.76.133 cloud.githubusercontent.com 151.101.76.133 camo.githubusercontent.com 151.101.76.133 avatars0.githubusercontent.com 151.101.76.133 avatars1.githubusercontent.com 151.101.76.133 avatars2.githubusercontent.com 151.101.76.133 avatars3.githubusercontent.com 151.101.76.133 avatars4.githubusercontent.com 151.101.76.133 avatars5.githubusercontent.com 151.101.76.133 avatars6.githubusercontent.com 151.101.76.133 avatars7.githubusercontent.com 151.101.76.133 avatars8.githubusercontent.com # GitHub End Iterm2 shell 集成 方法 1： curl -L https://iterm2.
+    </div>
+  </div>
+</div>
+</div>
+      
     </section>
-<ul class="pagination">
-  <li class="page-item">
-    <a href="/posts/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-  </li>
-  <li class="page-item disabled">
-    <a  class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-  </li>
-  <li class="page-item active">
-    <a class="page-link" href="/posts/">1</a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="/posts/page/2/">2</a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="/posts/page/3/">3</a>
-  </li>
-  <li class="page-item">
-    <a href="/posts/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-  </li>
-  <li class="page-item">
-    <a href="/posts/page/3/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-  </li>
-</ul>
 
 </article>
 
