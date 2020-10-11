@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 个人技术积累</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 09 Oct 2020 06:27:13 +0800</lastBuildDate><atom:link href="https://rainplus.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Oct 2020 11:49:31 +0800</lastBuildDate><atom:link href="https://rainplus.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plantuml</title>
+      <link>https://rainplus.github.io/posts/plantuml/</link>
+      <pubDate>Sun, 11 Oct 2020 11:49:31 +0800</pubDate>
+      
+      <guid>https://rainplus.github.io/posts/plantuml/</guid>
+      <description>@startuml 用户 -&amp;gt; 认证中心: 登录操作 认证中心 -&amp;gt; 缓存: 存放(key=token+ip,value=token)token 用户 &amp;lt;- 认证中心 : 认证成功返回token 用户 -&amp;gt; 认证中心: 下次访问头部携带token认证 认证中心 &amp;lt;- 缓存: key=token+ip获取token 其他服务 &amp;lt;- 认证中心: 存在且校验成功则跳转到用户请求的其他服务 其他服务 -&amp;gt; 用户: 信息 @enduml </description>
+    </item>
+    
     <item>
       <title>Git Hooks Pre Commit Format</title>
       <link>https://rainplus.github.io/posts/git-hooks-pre-commit-format/</link>

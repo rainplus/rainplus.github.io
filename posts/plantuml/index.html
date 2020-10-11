@@ -9,9 +9,9 @@
     <meta name="description" content="The last theme you&#39;ll ever need. Maybe.">
     
     
-    <link rel="prev" href="https://rainplus.github.io/posts/oop/" />
-    <link rel="next" href="https://rainplus.github.io/posts/markdown-practice/" />
-    <link rel="canonical" href="https://rainplus.github.io/posts/vim-markdown-preview/" />
+    <link rel="prev" href="https://rainplus.github.io/posts/git-hooks-pre-commit-format/" />
+    
+    <link rel="canonical" href="https://rainplus.github.io/posts/plantuml/" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
     <title>
         
         
-            Vim Markdown Preview | 个人技术积累
+            Plantuml | 个人技术积累
         
     </title>
-    <meta name="title" content="Vim Markdown Preview | 个人技术积累">
+    <meta name="title" content="Plantuml | 个人技术积累">
     
 <link rel="stylesheet" href="/css/main.min.css">
 
@@ -43,9 +43,9 @@
          "@id": "https:\/\/rainplus.github.io"
     },
     "articleSection" : "posts",
-    "name" : "Vim Markdown Preview",
-    "headline" : "Vim Markdown Preview",
-    "description" : "",
+    "name" : "Plantuml",
+    "headline" : "Plantuml",
+    "description" : "@startuml 用户 -\u0026gt; 认证中心: 登录操作 认证中心 -\u0026gt; 缓存: 存放(key=token\u002bip,value=token)token 用户 \u0026lt;- 认证中心 : 认证成功返回token 用户 -\u0026gt; 认证中心: 下次访问头部携带token认证 认证中心 \u0026lt;- 缓存: key=token\u002bip获取token 其他服务 \u0026lt;- 认证中心: 存在且校验成功则跳转到用户请求的其他服务 其他服务 -\u0026gt; 用户: 信息 @enduml ",
     "inLanguage" : "zh-cn",
     "author" : "",
     "creator" : "",
@@ -53,10 +53,10 @@
     "accountablePerson" : "",
     "copyrightHolder" : "",
     "copyrightYear" : "2020",
-    "datePublished": "2020-10-06 23:34:47 \u002b0800 CST",
-    "dateModified" : "2020-10-06 23:34:47 \u002b0800 CST",
-    "url" : "https:\/\/rainplus.github.io\/posts\/vim-markdown-preview\/",
-    "wordCount" : "0",
+    "datePublished": "2020-10-11 11:49:31 \u002b0800 CST",
+    "dateModified" : "2020-10-11 11:49:31 \u002b0800 CST",
+    "url" : "https:\/\/rainplus.github.io\/posts\/plantuml\/",
+    "wordCount" : "31",
     "keywords" : [  "个人技术积累"]
 }
 </script>
@@ -125,15 +125,15 @@
                     
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Vim Markdown Preview</h1>
+        <h1 class="post-title" itemprop="name headline">Plantuml</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://rainplus.github.io" rel="author"></a> with ♥
                 <span class="post-time">
-                on <time datetime=2020-10-06 itemprop="datePublished">October 6, 2020</time>
+                on <time datetime=2020-10-11 itemprop="datePublished">October 11, 2020</time>
                 </span>
                 in
                 
-                <span class="post-word-count">0 words</span>
+                <span class="post-word-count">31 words</span>
         </div>
     </header>
 
@@ -153,7 +153,19 @@
         
         
 
-        
+        <pre><code class="language-plantuml" data-lang="plantuml">@startuml
+
+用户 -&gt; 认证中心: 登录操作
+认证中心 -&gt; 缓存: 存放(key=token+ip,value=token)token
+
+用户 &lt;- 认证中心 : 认证成功返回token
+用户 -&gt; 认证中心: 下次访问头部携带token认证
+认证中心 &lt;- 缓存: key=token+ip获取token
+其他服务 &lt;- 认证中心: 存在且校验成功则跳转到用户请求的其他服务
+其他服务 -&gt; 用户: 信息
+@enduml
+
+</code></pre>
     </div>
 
     <div class="post-copyright">
@@ -162,7 +174,7 @@
             
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://rainplus.github.io/posts/vim-markdown-preview/>https://rainplus.github.io/posts/vim-markdown-preview/</span>
+                    <a href=https://rainplus.github.io/posts/plantuml/>https://rainplus.github.io/posts/plantuml/</span>
             </p>
             
             
@@ -179,10 +191,8 @@
 
     <div class="post-nav">
         
-        <a href="https://rainplus.github.io/posts/oop/" class="prev" rel="prev" title="面向对象"><i class="iconfont icon-left"></i>&nbsp;面向对象</a>
+        <a href="https://rainplus.github.io/posts/git-hooks-pre-commit-format/" class="prev" rel="prev" title="Git Hooks Pre Commit Format"><i class="iconfont icon-left"></i>&nbsp;Git Hooks Pre Commit Format</a>
         
-        
-        <a href="https://rainplus.github.io/posts/markdown-practice/" class="next" rel="next" title="Markdown Practice">Markdown Practice&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
